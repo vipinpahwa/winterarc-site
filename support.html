@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support — Winter Arc</title>
+<style>
+  :root {
+    --bg: #f2f5fb; --panel: #ffffff; --ink: #0b1b33; --muted: #5e7a9e;
+    --accent: #2e6fd8; --line: rgba(43,98,201,.14);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0c1524; --panel: #121f33; --ink: #eef3fb; --muted: #8fa6c6;
+      --accent: #6fc0ff; --line: rgba(120,170,255,.16);
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #0c1524; --panel: #121f33; --ink: #eef3fb; --muted: #8fa6c6;
+    --accent: #6fc0ff; --line: rgba(120,170,255,.16);
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 48px 16px 80px; }
+  header { margin-bottom: 30px; }
+  .eyebrow { font-size: 12px; font-weight: 700; letter-spacing: 1.8px; color: var(--muted); text-transform: uppercase; }
+  h1 { font-size: 34px; line-height: 1.15; margin: 10px 0 8px; letter-spacing: -.5px; }
+  .contact {
+    background: var(--panel); border: 1px solid var(--line); border-radius: 14px;
+    padding: 20px 22px; margin: 26px 0 10px;
+  }
+  .contact a { font-size: 17px; font-weight: 600; }
+  h2 { font-size: 20px; margin: 36px 0 12px; letter-spacing: -.2px; }
+  details {
+    background: var(--panel); border: 1px solid var(--line); border-radius: 12px;
+    padding: 14px 18px; margin: 9px 0;
+  }
+  summary { cursor: pointer; font-weight: 600; }
+  details p { margin: 10px 0 2px; }
+  ul { padding-left: 22px; }
+  li { margin: 6px 0; }
+  .muted { color: var(--muted); }
+  a { color: var(--accent); }
+  footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="eyebrow">Winter Arc</div>
+  <h1>Support</h1>
+</header>
+
+<p>Winter Arc is a time-boxed habit tracker: you pick a hard start and a hard end, choose a few
+daily non-negotiables under three to five pillars, and check them off each day. Everything stays on
+your device.</p>
+
+<div class="contact">
+  <div class="muted" style="font-size:14px">Email support</div>
+  <a href="mailto:vipinpahwadev@gmail.com">vipinpahwadev@gmail.com</a>
+  <div class="muted" style="font-size:14px; margin-top:8px">
+    Please include your iOS version and what you were doing when the problem happened.
+    I aim to reply within a few days.
+  </div>
+</div>
+
+<h2>Common questions</h2>
+
+<details>
+  <summary>What are the three rulesets, and which should I pick?</summary>
+  <p><strong>Streaks</strong> counts consecutive days you completed every tracked habit. Simple and
+  strict — one missed day resets the streak.</p>
+  <p><strong>Consistency Score</strong> measures the percentage of habit-days you completed against
+  a target you choose. Forgiving of the occasional miss, good if you want a realistic average
+  rather than a perfect run.</p>
+  <p><strong>Grace Days</strong> gives you a fixed budget of missed days. With a budget of three,
+  three missed days are forgiven; the fourth ends the arc. Good if you want a hard consequence
+  without it being all-or-nothing.</p>
+</details>
+
+<details>
+  <summary>I ran out of grace days. Is the arc over?</summary>
+  <p>You choose. When the budget is exhausted the app shows you the options: <strong>Keep going
+  anyway</strong> continues tracking with the arc marked failed, so you still finish the ninety
+  days and keep your history. <strong>Restart with the same setup</strong> archives the current arc
+  and starts a fresh one with your existing pillars and habits pre-filled.</p>
+</details>
+
+<details>
+  <summary>Can I change my habits or pillars in the middle of an arc?</summary>
+  <p>Yes — Settings → Edit habits. A habit you add starts tracking from today, and a habit you
+  remove stops being tracked but stays in your history, so your past days are never rewritten.</p>
+</details>
+
+<details>
+  <summary>Can I check off a day I forgot?</summary>
+  <p>Yes, within the edit window. Open the day from the Progress heat map and toggle it there. Days
+  outside the window are locked and show a caption explaining why, so that your history stays
+  honest.</p>
+</details>
+
+<details>
+  <summary>Why did my day roll over while the app was open?</summary>
+  <p>That is expected. The app watches for midnight and finalises the previous day as soon as it
+  arrives, so your counts are always for the correct date, even if you leave the app open overnight
+  or travel across time zones.</p>
+</details>
+
+<details>
+  <summary>The widget is showing yesterday's numbers.</summary>
+  <p>The widget updates shortly after you toggle a habit, but iOS decides when to refresh it and
+  can delay that to save battery. Opening the app forces it to refresh. If it stays stale, remove
+  the widget and add it again.</p>
+</details>
+
+<details>
+  <summary>Where are my before and after photos stored?</summary>
+  <p>Inside the app's own private storage on your iPhone. They are never uploaded. If you tap to
+  save a comparison to your photo library, the app asks for add-only permission and writes a copy
+  there — it cannot read the rest of your library.</p>
+</details>
+
+<details>
+  <summary>Is my data backed up? What if I get a new phone?</summary>
+  <p>Winter Arc does not sync, but its data is included in your iPhone backup. If you restore a new
+  phone from an iCloud or encrypted local backup, your arc comes with it. Setting up a new phone as
+  new, without restoring a backup, starts you fresh.</p>
+</details>
+
+<details>
+  <summary>How do I delete everything?</summary>
+  <p>Settings → Reset app data permanently erases your arc, check-ins, reflections, photos and
+  preferences. Deleting the app removes all of it too.</p>
+</details>
+
+<details>
+  <summary>Does the app need an internet connection?</summary>
+  <p>No. Winter Arc has no networking at all and works identically in airplane mode.</p>
+</details>
+
+<h2>Accessibility</h2>
+<p>Winter Arc supports VoiceOver, Dynamic Type through the largest accessibility sizes, Reduce
+Motion and Increase Contrast. If something is hard to use with an accessibility feature turned on,
+please email me — that is a bug worth fixing.</p>
+
+<h2>Reporting a problem</h2>
+<ul>
+  <li>What happened, and what you expected instead.</li>
+  <li>Your iPhone model and iOS version.</li>
+  <li>The ruleset you are using, and roughly which day of the arc you are on.</li>
+  <li>A screenshot, if the problem is something you can see.</li>
+</ul>
+
+<footer>
+  Winter Arc for iPhone · <a href="privacy.html">Privacy Policy</a>
+</footer>
+
+</div>
+</body>
+</html>
